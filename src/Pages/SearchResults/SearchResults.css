@@ -15,24 +15,6 @@
     letter-spacing: 1px;
   }
   
-  /* Filters Container */
-  .searchResults__filters {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 2rem;
-  }
-  
-  /* Genre Select */
-  .genreSelect {
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #7a3fc7;
-    border-radius: 8px;
-    background-color: #2b2b2b;
-    color: #fff;
-    cursor: pointer;
-  }
-  
   /* Search Results Cards */
   .searchResults__cards {
     display: grid;
