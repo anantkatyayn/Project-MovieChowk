@@ -1,0 +1,124 @@
+/* Movie Detail Container */
+.movieDetail {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 3rem 5vw;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Poster Section */
+.movieDetail__poster {
+  max-width: 300px;
+  flex-shrink: 0;
+}
+
+.movieDetail__image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Info Section */
+.movieDetail__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+}
+
+/* Title and Tagline */
+.movieDetail__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.movieDetail__tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #7a3fc7;
+  margin-bottom: 1rem;
+}
+
+/* Rating Section */
+.movieDetail__rating {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.movieDetail__star {
+  color: #7a3fc7; /* Accent color for the star icon */
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.movieDetail__voteCount {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Runtime and Release Date */
+.movieDetail__runtime,
+.movieDetail__releaseDate {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Genres */
+.movieDetail__genres {
+  margin-bottom: 2rem;
+}
+
+.movieDetail__genre {
+  display: inline-block;
+  background-color: #7a3fc7;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Synopsis */
+.movieDetail__synopsisTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.movieDetail__synopsis {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .movieDetail {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3vw;
+  }
+
+  .movieDetail__poster {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .movieDetail__title {
+    font-size: 2rem;
+  }
+
+  .movieDetail__rating {
+    font-size: 1.2rem;
+  }
+
+  .movieDetail__synopsisTitle {
+    font-size: 1.5rem;
+  }
+}

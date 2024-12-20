@@ -1,0 +1,94 @@
+/* Global Font and Body Styling */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Poster Image Styling */
+.posterImage {
+  position: relative;
+  height: 60vh;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Poster Overlay Styling */
+.posterImage__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  box-sizing: border-box;
+}
+
+.posterImage__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.posterImage__runtime {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.posterImage__rating {
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.posterImage__star {
+  color: #7a3fc7; /* Accent color for the star icon */
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+}
+
+/* Enhanced Description Styling */
+.posterImage__description {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-height: 6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-left: 4px solid #7A3FC7;
+  padding: 1rem;
+  border-radius: 8px;
+  animation: fadeIn 1s ease;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .posterImage__title {
+    font-size: 2rem;
+  }
+
+  .posterImage__description {
+    font-size: 0.9rem;
+    max-height: 4rem;
+  }
+}

@@ -1,0 +1,61 @@
+.movie__list {
+  padding: 2rem 5vw;
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Movie List Title */
+.list__title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #7a3fc7;
+  letter-spacing: 1px;
+}
+
+/* Movie Cards Container */
+.list__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* No Results Message */
+.noResults {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #7a3fc7;
+}
+
+/* Pagination Controls */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  background-color: #7a3fc7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 1.2rem;
+  color: #fff;
+}
