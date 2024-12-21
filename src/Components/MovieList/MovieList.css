@@ -29,6 +29,11 @@
   font-size: 1.5rem;
   color: #7a3fc7;
 }
+.warn {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #d00000;
+}
 
 /* Pagination Controls */
 .pagination {

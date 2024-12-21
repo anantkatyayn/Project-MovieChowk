@@ -5,6 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import MovieList from "../../Components/MovieList/MovieList";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = (searchTerm, selectedGenre) => {
   const [popularMovies, setPopularMovies] = useState([]);
@@ -68,6 +69,7 @@ const Home = (searchTerm, selectedGenre) => {
           </Carousel>
         )}
         <MovieList searchTerm={searchTerm} selectedGenre={selectedGenre}/>
+        <Footer/>
       </div>
     </>
   );

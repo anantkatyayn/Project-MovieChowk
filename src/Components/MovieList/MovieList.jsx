@@ -43,7 +43,10 @@ const MovieList = () => {
         {movieList.length > 0 ? (
           movieList.map((movie) => <Card key={movie.id} movie={movie} />)
         ) : (
+          <div>
           <p className="noResults">No movies found.</p>
+          <p className="warn">if you are on network provided by Jio, try changing it.</p>
+          </div>
         )}
       </div>
 
