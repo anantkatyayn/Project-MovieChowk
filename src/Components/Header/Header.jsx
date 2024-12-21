@@ -46,7 +46,7 @@ const Header = () => {
         <nav className="navLinks">
           <Link to="/movie/popular" className="navItem">Popular</Link>
           <Link to="/movie/top_rated" className="navItem">Top Rated</Link>
-          <Link to="/movie/upcoming" className="navItem">Upcoming</Link>
+          <Link to="/movie/upcoming" className="navItem">Latest</Link>
         </nav>
       </div>
 

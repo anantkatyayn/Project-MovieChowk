@@ -5,8 +5,8 @@ import Home from "./Pages/Home/Home";
 import Movie from "./Pages/MovieDetail/Movie";
 import Popular from "./Pages/Popular";
 import TopRated from "./Pages/TopRated";
-import Upcoming from "./Pages/Upcoming";
 import SearchResults from "./Pages/SearchResults/SearchResults";
+import Latest from "./Pages/Latest";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -19,7 +19,7 @@ function App() {
         <Route path="/movie/:id" element={<Movie />} />
         <Route path="/movie/popular" element={<Popular />} />
         <Route path="/movie/top_rated" element={<TopRated />} />
-        <Route path="/movie/upcoming" element={<Upcoming />} />
+        <Route path="/movie/upcoming" element={<Latest />} />
         <Route path="/search" element={<SearchResults />} />
         <Route path="*" element={<h2>404 - Page Not Found</h2>} />
       </Routes>
