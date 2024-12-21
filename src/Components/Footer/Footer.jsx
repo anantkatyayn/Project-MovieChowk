@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub, FaBehance, FaLinkedin } from "react-icons/fa"; // React-Icons
-import logo from "../../../public/anant infinity logomark.png";
+import logo from "../../../public/movieChowkLogoFavIconTransparent.png";
 import packageInfo from "../../../package.json"; // Adjust path if needed
 import "./Footer.css"; // Import the CSS file
 
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-container">
           {/* Branding on the Left */}
           <div className="footer-branding">
-            <img src={logo} alt="MovieChowk Logo" className="footer-logo" />
+            <div className="logo-border"><img src={logo} alt="MovieChowk Logo" className="footer-logo" /></div>
             <div>
               <h2 className="footer-title">MovieChowk</h2>
               <p className="footer-text">

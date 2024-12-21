@@ -32,13 +32,25 @@
     margin-left: 10px; /* Adds space from the left end */
   }
   
-  .footer-logo {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    border: 3px solid #ffffff;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  }
+  /* Container for logo with border */
+.logo-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; 
+  width: 50px; 
+  border: 3px solid #efefef; 
+  border-radius: 50%; 
+  overflow: hidden; 
+}
+
+/* Logo inside the border */
+.footer-logo {
+  max-height: 70%; 
+  max-width: 70%; 
+  object-fit: contain; 
+}
+
   
   .footer-title {
     font-size: 20px;
