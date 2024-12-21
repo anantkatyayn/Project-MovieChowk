@@ -75,7 +75,7 @@ const Movie = () => {
           ))}
         </div>
 
-        <h3 className="movieDetail__synopsisTitle">Synopsis</h3>
+        <h3 className="movieDetail__synopsisTitle">Overview</h3>
         <p className="movieDetail__synopsis">{currentMovieDetail.overview}</p>
       </div>
     </div>

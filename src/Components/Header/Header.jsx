@@ -29,7 +29,7 @@ const Header = () => {
       const query = searchTerm.trim() ? `query=${encodeURIComponent(searchTerm)}` : "";
       const genre = selectedGenre ? `genre=${selectedGenre}` : "";
       const queryString = [query, genre].filter(Boolean).join("&");
-      
+
       navigate(`/search?${queryString}`);
       setShowOverlay(false);
       setSearchTerm("");
